@@ -78,7 +78,7 @@ export function matchImageSnapshotPlugin({ path: screenshotPath }) {
 
   const relativePath = path.relative(screenshotsFolder, screenshotDir);
   const snapshotsDir = customSnapshotsDir
-    ? path.join(process.cwd(), customSnapshotsDir, relativePath)
+    ? path.join(process.cwd(), customSnapshotsDir)
     : path.join(screenshotsFolder, '..', 'snapshots', relativePath);
 
   const snapshotKebabPath = path.join(
